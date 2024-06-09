@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+#    i dont want to recth any registry from other Eureka server on the network, added two below
+    fetch-registry: false
+    register-with-eureka: false
+#    this is how you configure your registry configureations when you have multiple Eureka servers on the network
